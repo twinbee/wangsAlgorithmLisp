@@ -2,9 +2,7 @@
 
 
 Wang's algorithm is a means of proving theorems in the Propositional
-Calculus. An alternative method is to use truth tables, but this
-generally involves considerably more computation. Here is the basic
-algorithm (repeated from Raphael).
+Calculus. 
 
    1. Write the premises down separated by commas, followed by an arrow and
       then the theorem to be proved. Eg:
@@ -63,35 +61,10 @@ algorithm (repeated from Raphael).
    6. If no connectives (~, ^ or v) remain in a line, and no proposition
       appears on both sides of the arrow, the line cannot be proved.
 
-The Propositional Calculus is not a powerful enough representation language
-for most AI tasks. For information about theorem proving in the Predicate
-Calculus, see * RESOLUTION.
-
-Exercise
---------
-
-Try to work out for yourself just why this algorithm works. Write a program
-to apply the algorithm to an arbitrary Propositional Calculus problem. You
-will have to find a way of representing Propositional Calculus formulae. Note
-that the algorithm assumes that the only logical connectives used are ~
-(not), ^ (and) and v (or). If you want to use other connectives, such as ->
-(implies), you will have to convert your formulae before you can run the
-algorithm. Try your program on the following:
-
-    If the Russians get ahead of the Americans in the arms race, they will
-    take over the world. If the Russians announce that they are cutting their
-    arms budget, Congress will cut the American arms budget. If the
-    Americans cut their arms budget, but the Russians do not cut theirs, the
-    Russians will get ahead of the Americans in the arms race. The Russians
-    are devious and will announce that they have cut their arms budget
-    in any case. Either the SALT talks will fail or the Russians will cut
-    their arms budget.
-
-    If the SALT talks fail, will the Russians take over the world?
-    If the SALT talks don't fail, will the Russians take over the world?
-
 References
 ----------
+
+TEACH WANG  (reproduced here)                                Mellish, Chris  January 1983
 
 Lemmon, E.J. "Beginning Logic", Nelson, 1972.
 
