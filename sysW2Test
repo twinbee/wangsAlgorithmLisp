@@ -1,0 +1,20 @@
+[1]> (load "sysw2.lsp")
+;; Loading file sysw2.lsp ...
+;;  Loading file helper.lsp ...
+;;  Loaded file helper.lsp
+System W (waiting): (a)
+Malformed expression. Cannot evaluate.
+System W (waiting): (a and a)
+ is contradiction.
+System W (waiting): a
+ is contradiction.
+System W (waiting): (a implies a)
+ is tautology.
+System W (waiting): ((a and b) implies (a or b))
+ is tautology.
+System W (waiting): ((a or b) implies (a and b))
+ is contradiction.
+System W (waiting): ((a or (not a)) implies anything)
+ is tautology.
+System W (waiting): ((a equivalence (not a)) and a)
+ is tautology.
